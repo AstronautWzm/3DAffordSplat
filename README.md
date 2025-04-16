@@ -68,5 +68,13 @@ This project is for research purpose only, please contact us for the licence of 
 ## 🔍 Citation <a name="7"></a> 
 
 ```
-
+@misc{wei20253daffordsplatefficientaffordancereasoning,
+      title={3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians}, 
+      author={Zeming wei and Junyi Lin and Yang Liu and Weixing Chen and Jingzhou Luo and Guanbin Li and Liang Lin},
+      year={2025},
+      eprint={2504.11218},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.11218}, 
+}
 ```
