@@ -28,7 +28,7 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     </em>
 </p>
 
-**3DAffordSplat.** We introduce 3DAffordSplat, the first large-scale, multimodal 3DGS-based Affordance Reasoning with comprehensive affordance annotations, comprising Gaussian, point cloud, and textual instruction modalities.
+**3DAffordSplat.** We introduce 3DAffordSplat, the first large-scale, multimodal 3DGS-based Affordance Reasoning with comprehensive affordance annotations, comprising Gaussian, point cloud, and textual instruction modalities.
 
 
 ## 📖 Method <a name="2"></a> 
