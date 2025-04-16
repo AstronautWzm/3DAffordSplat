@@ -1,6 +1,6 @@
 [![Website Badge](https://raw.githubusercontent.com/referit3d/referit3d/eccv/images/project_website_badge.svg)]()
 [![arXiv](https://img.shields.io/badge/arXiv-2303.10437-b31b1b.svg?style=plastic)]()
-# 3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians (ACM MM 2025)
+# 3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians
 PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians". This repository contains PyTorch training, evaluation, inference code, the pretrained model and the 3DAffordSplat dataset.
 
 ## 📋 Table of content
