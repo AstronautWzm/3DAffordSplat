@@ -14,6 +14,7 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     3. [Evaluate](#53)
  6.  [✉️ Statement](#6)
  7.  [🔍 Citation](#7)
+ 8.  [👏 Acknowledgements](#9)
 
 
 ## 🍎 News: We will release the dataset and code as soon as possible!
@@ -134,3 +135,9 @@ This project is for research purpose only, please contact us for the licence of 
       url={https://arxiv.org/abs/2504.11218}, 
 }
 ```
+
+## 👏 Acknowledgements <a name="8"></a> 
+- [3DAffordanceNet](https://github.com/Gorilla-Lab-SCUT/AffordanceNet), [LASO](https://github.com/yl3800/laso) and [ShapeSplat](https://huggingface.co/datasets/ShapeSplats/ModelNet_Splats)：The construction of AffordSplat dataset is based on these works. 
+- [SuperSplat](https://playcanvas.com/supersplat/editor): We performed our data annotation using this excellent platform.
+
+We sincerely thank Guantian Liu, Yao Xiao, Xinyu Li, Kecheng Liang and Yipeng Ouyang for their contributions.
