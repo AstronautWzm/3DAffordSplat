@@ -42,15 +42,71 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
 **Novel 3DGS-based affordance reasoning model.** We propose a novel 3DGS-based affordance reasoning model, AffordSplatNet, that enables effective knowledge transfer between point cloud and Gaussian representations, improving affordance reasoning accuracy and robustness.
 
 
-## 📂 Dataset Examples <a name="3"></a> 
+## 📂 Dataset <a name="3"></a> 
+**Examples of 3DAffordSplat.** Some annotated examples of 3DAffordSplat are shown below, showing the meticulous annotation quality of 3DAfferdSplat.
 <p align="center">
     <img src="./images/\Annotated_example.jpg" width="750"/> <br />
     <em> 
     </em>
 </p>
 
-**Examples of 3DAffordSplat.** Some annotated examples of 3DAffordSplat, showing the meticulous annotation quality of 3DAfferdSplat.
+#### Dataset setup
+The full set of object-affordance pairs are stored in [obj_aff_structure.json](data/obj_aff_structure.json). For UnSeen setting, the object-afforance pairs are stored in [UnSeen_train.json](data/UnSeen_train.json) and [UnSeen_test.json](data/UnSeen_test.json).
 
+You can download the AffordSplat dataset from [huggingface](https://huggingface.co/datasets/Weizm/AffordSplat), [Google Drive](), [Baidu]() and [ModelScope]().
+
+Afterward, the data structure should be as follows:
+```
+—Seen
+    ├── train
+    │   ├── bag
+    │   │   ├── Gaussian
+    │   │   │   └── GS_0017.ply
+    │   │   │       ......
+    │   │   ├── PointCloud
+    │   │   │   └── PC_0001.ply
+    │   │   │       ......
+    │   │   ├── contain
+    │   │   │   ├── GS_anno_0017.ply
+    │   │   │   ├── PC_anno_0001.json
+    │   │   │       ......
+    │   │   └── grasp
+    │   │       ......
+    │   └── bed
+    │       ......
+    │
+    ├── val
+    │   ├── bag
+    │   │   ├── Gaussian
+    │   │   │   └── GS_0009.ply
+    │   │   │       ......
+    │   │   ├── contain
+    │   │   │   └── GS_anno_0009.ply
+    │   │   │       ......
+    │   │   └── grasp
+    │   │       ......
+    │   └── bed
+    │       ......
+    │
+    └── test
+        ├── bag
+        │   ├── Gaussian
+        │   │   └── GS_0001.ply
+        │   │       ......
+        │   ├── contain
+        │   │   └── GS_anno_0001.ply
+        │   │       ......
+        │   └── grasp
+        │       ......
+        └── bed
+            ......
+
+—Affordance-Question.csv
+—obj_aff_structure.json
+—UnSeen_test.json
+—UnSeen_train.json
+```
+More detailed informations can be find in [AffordSplat](https://arxiv.org/abs/2504.11218).
 
 ## 📃 Requirements <a name="4"></a> 
 
