@@ -137,7 +137,7 @@ This project is for research purpose only, please contact us for the licence of 
 ```
 
 ## 👏 Acknowledgements <a name="8"></a> 
-- [3DAffordanceNet](https://github.com/Gorilla-Lab-SCUT/AffordanceNet), [LASO](https://github.com/yl3800/laso) and [ShapeSplat](https://huggingface.co/datasets/ShapeSplats/ModelNet_Splats)：The construction of AffordSplat dataset is based on these works. 
+- [3DAffordanceNet](https://github.com/Gorilla-Lab-SCUT/AffordanceNet), [LASO](https://github.com/yl3800/laso) and [ShapeSplat](https://huggingface.co/datasets/ShapeSplats/ModelNet_Splats): The construction of AffordSplat dataset is based on these works. 
 - [SuperSplat](https://playcanvas.com/supersplat/editor): We performed our data annotation using this excellent platform.
 
 We sincerely thank Guantian Liu, Yao Xiao, Xinyu Li, Kecheng Liang and Yipeng Ouyang for their contributions.
