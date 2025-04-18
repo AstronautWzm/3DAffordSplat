@@ -51,7 +51,7 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     </em>
 </p>
 
-### Dataset setup
+### Dataset Setup
 The full set of object-affordance pairs are stored in [obj_aff_structure.json](data/obj_aff_structure.json). For UnSeen setting, the object-afforance pairs are stored in [UnSeen_train.json](data/UnSeen_train.json) and [UnSeen_test.json](data/UnSeen_test.json).
 
 You can download the AffordSplat dataset from [huggingface](https://huggingface.co/datasets/Weizm/AffordSplat), [Google Drive](), [Baidu]() and [ModelScope]().
