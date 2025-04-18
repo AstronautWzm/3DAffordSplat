@@ -17,7 +17,7 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
  8.  [👏 Acknowledgements](#8)
 
 
-## 🍎 News: We will release the dataset and code as soon as possible!
+## 🍎 News: We have released the dataset!
 
 
 ## 💡 Abstract <a name="1"></a> 
