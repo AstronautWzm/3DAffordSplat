@@ -1,0 +1,97 @@
+{
+    "trashcan": [
+        "pour",
+        "contain",
+        "open"
+    ],
+    "clock": [
+        "display"
+    ],
+    "keyboard": [
+        "press"
+    ],
+    "bed": [
+        "lay",
+        "support",
+        "sit"
+    ],
+    "dishwasher": [
+        "contain",
+        "open"
+    ],
+    "knife": [
+        "stab",
+        "grasp",
+        "cut"
+    ],
+    "bottle": [
+        "pour",
+        "contain",
+        "open",
+        "grasp",
+        "wrap_grasp"
+    ],
+    "chair": [
+        "support",
+        "move",
+        "sit"
+    ],
+    "bag": [
+        "contain",
+        "open",
+        "grasp",
+        "lift"
+    ],
+    "laptop": [
+        "press",
+        "display"
+    ],
+    "table": [
+        "support",
+        "move"
+    ],
+    "faucet": [
+        "open",
+        "grasp"
+    ],
+    "earphone": [
+        "listen",
+        "grasp"
+    ],
+    "storagefurniture": [
+        "contain",
+        "open"
+    ],
+    "hat": [
+        "wear",
+        "grasp"
+    ],
+    "microwave": [
+        "contain",
+        "open"
+    ],
+    "mug": [
+        "pour",
+        "contain",
+        "grasp",
+        "wrap_grasp"
+    ],
+    "bowl": [
+        "pour",
+        "contain",
+        "wrap_grasp"
+    ],
+    "vase": [
+        "pour",
+        "contain",
+        "wrap_grasp"
+    ],
+    "door": [
+        "pull",
+        "open",
+        "push"
+    ],
+    "display": [
+        "display"
+    ]
+}

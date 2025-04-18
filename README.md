@@ -14,6 +14,7 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     3. [Evaluate](#53)
  6.  [✉️ Statement](#6)
  7.  [🔍 Citation](#7)
+ 8.  [👏 Acknowledgements](#8)
 
 
 ## 🍎 News: We will release the dataset and code as soon as possible!
@@ -28,7 +29,7 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     </em>
 </p>
 
-**3DAffordSplat.** We introduce 3DAffordSplat, the first large-scale, multimodal 3DGS-based Affordance Reasoning with comprehensive affordance annotations, comprising Gaussian, point cloud, and textual instruction modalities.
+**3DAffordSplat.** We introduce 3DAffordSplat, the first large-scale, multi-modal 3DGS-based Affordance Reasoning with comprehensive affordance annotations, comprising Gaussian, point cloud, and textual instruction modalities.
 
 
 ## 📖 Method <a name="2"></a> 
@@ -39,18 +40,74 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     </em>
 </p>
 
-**Novel 3DGS-based affordance reasoning model.** We propose a novel 3DGS-based affordance reasoning model, AffordSplatNet, that enables effective knowledge transfer between point cloud and Gaussian representations, improving affordance reasoning accuracy and robustness.
+**Novel 3DGS-based affordance reasoning model.** We propose a novel 3DGS-based affordance reasoning model, AffordSplatNet, that enables effective knowledge transfer between point cloud and Gaussian representations, improving affordance reasoning accuracy and robustness.
 
 
-## 📂 Dataset Examples <a name="3"></a> 
+## 📂 Dataset <a name="3"></a> 
+**Examples of 3DAffordSplat.** Some annotated examples of 3DAffordSplat are shown below, showing the meticulous annotation quality of 3DAfferdSplat.
 <p align="center">
     <img src="./images/\Annotated_example.jpg" width="750"/> <br />
     <em> 
     </em>
 </p>
 
-**Examples of 3DAffordSplat.** Some annotated examples of 3DAffordSplat, showing the meticulous annotation quality of 3DAfferdSplat.
+### Dataset Setup
+The full set of object-affordance pairs are stored in [obj_aff_structure.json](data/obj_aff_structure.json). For UnSeen setting, the object-afforance pairs are stored in [UnSeen_train.json](data/UnSeen_train.json) and [UnSeen_test.json](data/UnSeen_test.json).
 
+You can download the AffordSplat dataset from [huggingface](https://huggingface.co/datasets/Weizm/AffordSplat), [Google Drive]() (coming soon), [Baidu]() (coming soon) and [ModelScope]() (coming soon).
+
+Afterward, the data structure should be as follows:
+```
+—Seen
+    ├── train
+    │   ├── bag
+    │   │   ├── Gaussian
+    │   │   │   └── GS_0017.ply
+    │   │   │       ......
+    │   │   ├── PointCloud
+    │   │   │   └── PC_0001.ply
+    │   │   │       ......
+    │   │   ├── contain
+    │   │   │   ├── GS_anno_0017.ply
+    │   │   │   ├── PC_anno_0001.json
+    │   │   │       ......
+    │   │   └── grasp
+    │   │       ......
+    │   └── bed
+    │       ......
+    │
+    ├── val
+    │   ├── bag
+    │   │   ├── Gaussian
+    │   │   │   └── GS_0009.ply
+    │   │   │       ......
+    │   │   ├── contain
+    │   │   │   └── GS_anno_0009.ply
+    │   │   │       ......
+    │   │   └── grasp
+    │   │       ......
+    │   └── bed
+    │       ......
+    │
+    └── test
+        ├── bag
+        │   ├── Gaussian
+        │   │   └── GS_0001.ply
+        │   │       ......
+        │   ├── contain
+        │   │   └── GS_anno_0001.ply
+        │   │       ......
+        │   └── grasp
+        │       ......
+        └── bed
+            ......
+
+—Affordance-Question.csv
+—obj_aff_structure.json
+—UnSeen_test.json
+—UnSeen_train.json
+```
+More detailed informations can be find in [AffordSplat](https://arxiv.org/abs/2504.11218).
 
 ## 📃 Requirements <a name="4"></a> 
 
@@ -78,3 +135,9 @@ This project is for research purpose only, please contact us for the licence of 
       url={https://arxiv.org/abs/2504.11218}, 
 }
 ```
+
+## 👏 Acknowledgements <a name="8"></a> 
+- [3DAffordanceNet](https://github.com/Gorilla-Lab-SCUT/AffordanceNet), [LASO](https://github.com/yl3800/laso) and [ShapeSplat](https://huggingface.co/datasets/ShapeSplats/ModelNet_Splats): The construction of AffordSplat dataset is based on these works. 
+- [SuperSplat](https://playcanvas.com/supersplat/editor): We performed our data annotation using this excellent platform.
+
+We sincerely thank Guantian Liu, Yao Xiao, Xinyu Li, Kecheng Liang and Yipeng Ouyang for their contributions.

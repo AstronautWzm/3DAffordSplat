@@ -1,0 +1,54 @@
+{
+    "bed": [
+        "sit"
+    ],
+    "dishwasher": [
+        "contain",
+        "open"
+    ],
+    "knife": [
+        "cut"
+    ],
+    "bottle": [
+        "pour"
+    ],
+    "chair": [
+        "support"
+    ],
+    "bag": [
+        "lift"
+    ],
+    "laptop": [
+        "press"
+    ],
+    "table": [
+        "move"
+    ],
+    "earphone": [
+        "grasp"
+    ],
+    "storagefurniture": [
+        "contain"
+    ],
+    "hat": [
+        "wear"
+    ],
+    "microwave": [
+        "open"
+    ],
+    "mug": [
+        "grasp"
+    ],
+    "bowl": [
+        "wrap_grasp"
+    ],
+    "vase": [
+        "pour"
+    ],
+    "door": [
+        "push"
+    ],
+    "display": [
+        "display"
+    ]
+}
