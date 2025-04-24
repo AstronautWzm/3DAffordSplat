@@ -12,13 +12,12 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     1. [Pretrain](#51)
     2. [Finetune](#52)
     3. [Inference](#53)
-    4. [Obtain visualized results](#54)
  6.  [✉️ Statement](#6)
  7.  [🔍 Citation](#7)
  8.  [👏 Acknowledgements](#8)
 
 
-## 🍎 News: We have released the dataset!
+## 🍎 News: We have released the code!
 
 
 ## 💡 Abstract <a name="1"></a> 
@@ -159,7 +158,6 @@ To perform inference using the trained model, follow these steps:
    sh inference.sh
    ```
    
-**Obtain visualized results** <a name="54"></a> 
 We have provided an additional `utils/get_ply_result.py` file to help to obtain visualization results.
 
 
