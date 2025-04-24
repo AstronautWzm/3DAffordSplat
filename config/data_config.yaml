@@ -1,0 +1,25 @@
+setting: Seen
+shuffle: False
+drop_last: True
+batch_size: 4
+num_workers: 2
+type:
+root_dir: AffordSplat
+
+pretrain:
+  pc_num: 4
+  is_pretrain: True
+  random_seed: 0
+  gs_label_num: None
+
+finetune:
+  pc_num: 1
+  is_pretrain: False
+  random_seed: 0
+  gs_label_num: all
+
+
+
+
+
+

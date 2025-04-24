@@ -1,0 +1,67 @@
+Pointnet_with_transformer:
+  num_heads: 4
+  transformer_encoder_num: 3
+
+  net1:
+    nsample: 2048
+    knn_points:
+      - 8
+      - 16
+      - 32
+
+  net2:
+    nsample: 512
+    knn_points:
+      - 16
+      - 32
+      - 64
+
+  net3:
+    nsample: 128
+    knn_points:
+      - 16
+      - 32
+      - 64
+
+
+utils:
+  gs_dim: 10
+  pc_dim: 3
+  gs_embed_dim: 512
+  att_drop: 0.1
+  lin_drop: 0.1
+
+
+mllm:
+  text_encoder_type: roberta-base
+  freeze_model: False
+  embedding_dim: 512
+
+
+mmfm:
+  num_heads: 4
+  dim_out: 512
+
+
+gam:
+  mlp_ratio: 2
+  k: 3
+  p: 2
+  out_channels:
+
+
+decoder:
+  num_heads: 4
+  decoder_block_num: 3
+
+
+csa:
+  embed_dim: 256
+  num_heads: 4
+  nsample: 1024
+  knn_points:
+    - 8
+    - 16
+    - 32
+  threshold: 0.5
+
