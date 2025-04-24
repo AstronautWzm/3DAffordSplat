@@ -147,8 +147,8 @@ To fine-tune the model using pre-trained weights, follow these steps:
 **Inference** <a name="53"></a> 
 
 To perform inference using the trained model, follow these steps:
-1. Locate the train_config.yaml file in the config directory.
-2. Modify the inference section as follows:
+1. Locate the `train_config.yaml` file in the `config` directory.
+2. Modify the `inference` section as follows:
    ```
    inference:
      ckpt_path: /path/to/trained/weights.pth
