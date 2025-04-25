@@ -9,15 +9,15 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
  3. [📂 Dataset](#3)
  4. [📃 Requirements](#4)
  5. [✏️ Usage](#5)
-    1. [Demo](#51)
-    2. [Train](#52)
-    3. [Evaluate](#53)
+    1. [Pretrain](#51)
+    2. [Finetune](#52)
+    3. [Inference](#53)
  6.  [✉️ Statement](#6)
  7.  [🔍 Citation](#7)
  8.  [👏 Acknowledgements](#8)
 
 
-## 🍎 News: We have released the dataset!
+## 🍎 News: We have released the code!
 
 
 ## 💡 Abstract <a name="1"></a> 
@@ -52,71 +52,114 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
 </p>
 
 ### Dataset Setup
-The full set of object-affordance pairs are stored in [obj_aff_structure.json](data/obj_aff_structure.json). For UnSeen setting, the object-afforance pairs are stored in [UnSeen_train.json](data/UnSeen_train.json) and [UnSeen_test.json](data/UnSeen_test.json).
+The full set of object-affordance pairs are stored in [obj_aff_structure.json](AffordSplat/obj_aff_structure.json). For UnSeen setting, the object-afforance pairs are stored in [UnSeen_train.json](AffordSplat/UnSeen_train.json) and [UnSeen_test.json](AffordSplat/UnSeen_test.json).
 
-You can download the AffordSplat dataset from [huggingface](https://huggingface.co/datasets/Weizm/AffordSplat), [Google Drive]() (coming soon), [Baidu]() (coming soon) and [ModelScope]() (coming soon).
+You can download the AffordSplat dataset from [huggingface](https://huggingface.co/datasets/Weizm/AffordSplat), [Google Drive]() (coming soon), [Baidu]() (coming soon) and [ModelScope]() (coming soon). The dataset should be placed in the `AfferdSplat` folder of the project. 
 
-Afterward, the data structure should be as follows:
+Afterward, the `AfferdSplat` folder structure should be as follows:
 ```
-—Seen
-    ├── train
-    │   ├── bag
-    │   │   ├── Gaussian
-    │   │   │   └── GS_0017.ply
-    │   │   │       ......
-    │   │   ├── PointCloud
-    │   │   │   └── PC_0001.ply
-    │   │   │       ......
-    │   │   ├── contain
-    │   │   │   ├── GS_anno_0017.ply
-    │   │   │   ├── PC_anno_0001.json
-    │   │   │       ......
-    │   │   └── grasp
-    │   │       ......
-    │   └── bed
-    │       ......
-    │
-    ├── val
-    │   ├── bag
-    │   │   ├── Gaussian
-    │   │   │   └── GS_0009.ply
-    │   │   │       ......
-    │   │   ├── contain
-    │   │   │   └── GS_anno_0009.ply
-    │   │   │       ......
-    │   │   └── grasp
-    │   │       ......
-    │   └── bed
-    │       ......
-    │
-    └── test
-        ├── bag
-        │   ├── Gaussian
-        │   │   └── GS_0001.ply
-        │   │       ......
-        │   ├── contain
-        │   │   └── GS_anno_0001.ply
-        │   │       ......
-        │   └── grasp
-        │       ......
-        └── bed
-            ......
-
-—Affordance-Question.csv
-—obj_aff_structure.json
-—UnSeen_test.json
-—UnSeen_train.json
+AffordSplat
+├── Seen
+│   ├── train
+│   │   ├── bag
+│   │   │   ├── Gaussian
+│   │   │   │   ├── GS_0017.ply
+│   │   │   │   ├── ...
+│   │   │   ├── PointCloud
+│   │   │   │   ├── PC_0001.ply
+│   │   │   │   ├── ...
+│   │   │   ├── contain
+│   │   │   │   ├── GS_anno_0017.ply
+│   │   │   │   ├── PC_anno_0001.json
+│   │   │   │   ├── ...
+│   │   │   └── grasp
+│   │   │       ├── ...
+│   │   └── bed
+│   │       ├── ...
+│   ├── val
+│   │   ├── bag
+│   │   │   ├── Gaussian
+│   │   │   │   ├── GS_0009.ply
+│   │   │   │   ├── ...
+│   │   │   ├── contain
+│   │   │   │   ├── GS_anno_0009.ply
+│   │   │   │   ├── ...
+│   │   │   └── grasp
+│   │   │       ├── ...
+│   │   └── bed
+│   │       ├── ...
+│   └── test
+│       ├── bag
+│       │   ├── Gaussian
+│       │   │   ├── GS_0001.ply
+│       │   │   ├── ...
+│       │   ├── contain
+│       │   │   ├── GS_anno_0001.ply
+│       │   │   ├── ...
+│       │   └── grasp
+│       │       ├── ...
+│       └── bed
+│           ├── ...
+├── Affordance-Question.csv
+├── obj_aff_structure.json
+├── UnSeen_test.json
+└── UnSeen_train.json
 ```
-More detailed informations can be find in [AffordSplat](https://arxiv.org/abs/2504.11218).
+More detailed informations can be find in [3DAffordSplat](https://arxiv.org/abs/2504.11218).
 
 ## 📃 Requirements <a name="4"></a> 
-
-We will release it as soon as possible!
+Before you start, please ensure your system meets the following requirements:
+- PyTorch  2.5.1
+- Python  3.12(ubuntu22.04)
+- CUDA  12.4
+- RTX 4090(24GB) * 4
+  
+### Installation Steps
+1. Install Project Dependencies
+```bash
+conda create -n AffordSplat python=3.12
+conda activate AffordSplat
+pip install -r requirements.txt
+```
 
 
 ## ✏️ Usage <a name="5"></a> 
+**Pretrain** <a name="51"></a> 
+```
+sh pretrain.sh
+```
 
-We will release it as soon as possible!
+**Finetune** <a name="52"></a> 
+
+To fine-tune the model using pre-trained weights, follow these steps:
+1. Locate the `train_config.yaml` file in the `config` directory.
+2. Modify the `finetune` section as follows:
+   ```
+   finetune:
+     is_resume: True
+     ckpt_path: /path/to/pretrained/weights.pth
+   ```
+3. Run the fine-tuning script:
+   ```
+   sh finetune.sh
+   ```
+
+**Inference** <a name="53"></a> 
+
+To perform inference using the trained model, follow these steps:
+1. Locate the `train_config.yaml` file in the `config` directory.
+2. Modify the `inference` section as follows:
+   ```
+   inference:
+     ckpt_path: /path/to/trained/weights.pth
+   ```
+3. Run the inference script:
+   ```
+   sh inference.sh
+   ```
+   
+We have provided an additional `utils/get_ply_result.py` file to help to obtain visualization results.
+
 
 
 ## ✉️ Statement <a name="6"></a> 
