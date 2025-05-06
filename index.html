@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians"/>
+  <meta property="og:description" content="3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians"/>
+  <meta property="og:url" content="https://github.com/linda-jylin/3DAffordSplat"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>3DAffordSplat</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+              <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Kaixuan Jiang</a><sup>1*</sup>,</span> -->
+              Zeming Wei</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yang Liu</a><sup>1*</sup>,</span> -->
+                  Junyi Lin</a><sup>1*</sup>,</span>
+                    <span class="author-block">
+                      <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Weixing Chen</a><sup>1†</sup>,</span> -->
+                      Yang Liu</a><sup>1,3†</sup>,</span>
+                        <span class="author-block">
+                          <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Weixing Chen</a><sup>1†</sup>,</span> -->
+                          Weixing Chen</a><sup>1</sup>,</span>
+                          <span class="author-block">
+                            <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jingzhou Luo</a><sup>2</sup>,</span> -->
+                            Jingzhou Luo</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                              <!-- <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guanbin Li</a><sup>1</sup>,</span><br> -->
+                              Guanbin Li</a><sup>1,2,3</sup>,</span>
+                              <span class="author-block">
+                                <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Liang Lin</a><sup>1</sup>,</span> -->
+                                Liang Lin</a><sup>1,2,3</sup></span>
+                  <!-- </span> -->
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Sun Yat-sen University</span>
+                    <span class="author-block"><sup>2</sup>Peng Cheng Laboratory</span>
+                    <span class="author-block"><sup>3</sup>Guangdong Key Laboratory of Big Data Analysis and Processing </span><br>
+                    
+                    <span class="eql-cntrb"><small><sup>*</sup>Equal contribution</small></span>
+                    <span class="eql-cntrb"><small><sup>†</sup>Corresponding Author</small></span>
+                    <!-- <span class="eql-cntrb"><small><sup>‡</sup>Corresponding Author</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2504.11218" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> 
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/HCPLab-SYSU/3DAffordSplat" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2504.11218" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+    justify-content: center;
+    margin: 0 auto; /* 让整个区域居中 */
+    text-align: center;
+">
+  <div style="width: 800px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="800" height="600" autoplay muted loop controls>
+      <source src="static/video/1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: Where did I place the vase in the dining room?<br>A: It's placed in the center of the dining table.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: I invited four friends over. Are there enough seats for everyone in the living room?<br>A: Yes, there are enough seats for everyone.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: How can I practice drumming?<br>A: You can use the drum set in the corner of the practice room.</p>
+  </div>
+
+  <div style="width: 100%;"></div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: How many lab coats hanging in the laboratory?<br>A: There are two.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/6.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: What color is the front door in the entry hallway?<br>A: The front door is green.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/7.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: Is there a plant on the window sill in my workspace?<br>A: No, there isn't a plant.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/8.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: What exercise equipment can I use in the living room?<br>A: You can use the treadmill.</p>
+  </div>
+  
+  <div style="width: 100%;"></div>
+  
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/9.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: Is the curtain in the living room drawn all the way?<br>A: No, the curtain is partially drawn.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/10.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: Where did I put the plates?<br>A: It's on a shelf in the storage room.</p>
+  </div>
+  
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/11.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: What is the black appliance near the window in my kitchen?<br>A: It's a microwave.</p>
+  </div>
+
+  <div style="width: 200px; text-align: justify; display: flex; flex-direction: column;">
+    <video width="200" height="200" autoplay muted loop controls>
+      <source src="static/video/12.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; margin: 0;">Q: What is the composition of the kitchen floor's surface?<br>A: The kitchen floor is made up of tiles.</p>
+  </div> -->
+<!-- <div style="width: 100%; height: 50px;"></div> -->
+</div>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            3D affordance reasoning plays a critical role in associating human instructions with the functional regions of 3D objects, facilitating precise, task-oriented manipulations in embodied AI. However, current methods, which predominantly depend on sparse 3D point clouds, exhibit limited generalizability and robustness due to their sensitivity to coordinate variations and the inherent sparsity of the data. By contrast, 3D Gaussian Splatting (3DGS) delivers high-fidelity, real-time rendering with minimal computational overhead by representing scenes as dense, continuous distributions. This positions 3DGS as a highly effective approach for capturing fine-grained affordance details and improving recognition accuracy. Nevertheless, its full potential remains largely untapped due to the absence of large-scale, 3DGS-specific affordance datasets. To overcome these limitations, we present 3DAffordSplat, the first large-scale, multi-modal dataset tailored for 3DGS-based affordance reasoning. This dataset includes 23k Gaussian instances, 8.3k point cloud instances, and 6.6k manually annotated affordance labels, encompassing 21 object categories and 18 affordance types. Building upon this dataset, we introduce AffordSplatNet, a novel model specifically designed for affordance reasoning using 3DGS representations. AffordSplatNet features an innovative cross-modal structure alignment module that exploits structural consistency priors to align 3D point cloud and 3DGS representations, resulting in enhanced affordance recognition accuracy. Extensive experiments demonstrate that the 3DAffordSplat dataset significantly advances affordance learning within the 3DGS domain, while AffordSplatNet consistently outperforms existing methods across both seen and unseen settings, highlighting its robust generalization capabilities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section" id="Dataset">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Dataset: 3DAffordSplat</h2>
+  </div>
+</section>
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="text-align: justify;">
+      <img src="static/images/comparation.png" alt="MY ALT TEXT"/>
+          <p>
+          <b>Comparison of our 3DAffordSplat with other 3D affordance datasets.</b>
+        </p>
+      <img src="static/images/dataset.png" alt="MY ALT TEXT"/>
+      <!-- <h1 class="subtitle has-text-centered"> -->
+        <b>Dataset overview.</b> (a) Category distribution in 3DAffordSplat. (b) Numbers of 3DGS annotations in each affordance category. (c) Representative data examples from 3DAffordSplat (3DGS and point cloud, with affordance annotations and questions), the colored region in point clouds and 3DGS is the affordance annotation. (d) Examples of affordance reasoning. 
+        <!-- </h1> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="text-align: justify;">
+    <!-- <div class="hero-body" style="text-align:center"> -->
+      <img src="static/images/Dataset pipeline.png" alt="MY ALT TEXT"/>
+      <!-- <h1 class="subtitle has-text-centered"> -->
+        <p>
+        <b>Construction Pipeline.</b> 3DAffordSplat dataset integrates data from LASO and ShapeSplat. The point cloud and textual data are sourced from LASO, while the 3D Gaussian data is derived from ShapeSplat. According to the standard of 3DAffordanceNet, we manually labeled a small part of the Gaussian datas. Each object instance includes three modalities: point cloud, 3D Gaussian, and text, supporting applications like prediction, embodied question answering, and interactive grasping.
+        </p>
+        <!-- </h1> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="text-align: justify;">
+      <img src="static/images/Detailed statistics.png" alt="MY ALT TEXT" style="display: block; justify-content: center; margin-left: auto; margin-right: auto" width="50%"/><br>
+      <!-- <h1 class="subtitle has-text-centered"> -->
+        <b>Detailed statistics of 3DAffordSplat.</b> The dataset includes 23,672 Gaussian instances, 8,231 point cloud instances, and 6,631 manually annotated affordance labels, encompassing 21 object categories and 18 affordance types.
+      <!-- </h1> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+
+<section class="section" id="model">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Model</h2>
+  </div>
+</section>
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="text-align: justify;">
+      <img src="static/images/model.jpg" alt="MY ALT TEXT"/>
+      <!-- <h1 class="subtitle has-text-centered"> -->
+        <b>Architecture Overview.</b> AffordSplatNet (a) processes 3D Gaussians and human instructions through a hierarchical pipeline. It extracts multi-granularity features from Gaussians, while a pre-trained language model infers an ⟨Aff⟩ token from the text query, representing an intermediate segmentation result. These modalities are fused through attention mechanisms, with granularity selection prioritizing task-relevant spatial scales. The selected features decode into dynamic kernels for efficient affordance mask generation. To enhance 3D structural learning, Cross-Modal Structure Alignment (CMSA) (b) module aligns the Affordance regions and overall structural relations between the Gaussian and point cloud data at the structural level.
+      <!-- </h1> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+
+<section class="section" id="novel_scene">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Experiments</h2>
+  </div>
+</section>
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/experiment.png" alt="MY ALT TEXT" style="display: block; justify-content: center; margin-left: auto; margin-right: auto" width="60%"/>
+      <!-- <h1 class="subtitle has-text-centered"> -->
+        We compare the performance of AffordSplatNet with state-of-the-art point cloud models on 3DAffordSplat. AffordSplatNet outperforms other models in 3DGS Affordance Reasoning.
+      <!-- </h1> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<section class="section" id="novel_scene">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Results Visualization</h2>
+  </div>
+</section>
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="display: flex; justify-content: center;">
+        <img src="static/images/Show-cases1.jpg" alt="MY ALT TEXT" style="display: block; justify-content: center; margin-left: auto; margin-right: auto" width="60%"/>
+        <img src="static/images/Show-cases2.jpg" alt="MY ALT TEXT" style="display: block; justify-content: center; margin-left: auto; margin-right: auto" width="60%"/>
+      </div>
+      <b>Visualization Results of AffordSplatNet.</b> Each example includes one query, one answer and four object shapes, illustrating the model’s generalization capability in affordance knowledge. The identified affordance regions are marked in red.      
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!--BibTex citation -->
+<section class="section" id="Statement">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Statement And Contact</h2>
+    <p>
+      This project is for research purpose only, please contact us for the licence of commercial use. For any other questions please contact (<b>weizm6@mail2.sysu.edu.cn</b>, <b>linjy279@mail2.sysu.edu.cn</b> or <b>liuy856@mail.sysu.edu.cn</b>).
+    </p>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{wei20253daffordsplatefficientaffordancereasoning,
+        title={3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians}, 
+        author={Zeming wei and Junyi Lin and Yang Liu and Weixing Chen and Jingzhou Luo and Guanbin Li and Liang Lin},
+        year={2025},
+        eprint={2504.11218},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2504.11218}, 
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
