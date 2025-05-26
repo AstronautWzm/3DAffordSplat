@@ -17,7 +17,7 @@ from utils.loss_function import *
 from models.Affordsplat_net import Affordsplat_net
 from models.GPSE import gpse
 from utils.evaluate_function import *
-
+from utils.loss_function import *
 
 
 def config_read(path):

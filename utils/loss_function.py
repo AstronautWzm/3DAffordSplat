@@ -7,7 +7,7 @@ def standardize(tensor, dim=-1):
     std = tensor.std(dim=dim, keepdim=True)
     return (tensor - mean) / (std + 1e-8)
 
-def cosine_loss(gs_features, pc_features, loss_consis_weight, device, neg_ratio=0):
+def cosine loss(gs_features, pc_features, loss_consis_weight):
     B, _, C = gs_features.size()
 
     gs_norm = F.normalize(gs_features.squeeze(1), p=2, dim=-1)
