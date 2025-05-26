@@ -362,7 +362,7 @@ class pretrain_trainer():
                     gs_features, padded_gs_datas, mask_batch, pc_mean_all, pc_aff_map_all, question, answer, device=self.device)
 
 
-                loss_consis = cosine_similarity_loss(gs_stru_features, pc_stru_features) # [Batch size, pc_num, 1]
+                loss_consis = cosine_loss(gs_stru_features, pc_stru_features,loss_consis_weight) # [Batch size, pc_num, 1]
                 loss_consis = torch.sum(loss_consis_weight.unsqueeze(-1) * loss_consis) # tensor
                 loss = loss_consis + text_loss
 
