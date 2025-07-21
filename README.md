@@ -12,12 +12,13 @@ PyTorch implementation of "3DAffordSplat: Efficient Affordance Reasoning with 3D
     1. [Pretrain](#51)
     2. [Finetune](#52)
     3. [Inference](#53)
+    4. [Checkpoints](#54)
  6.  [✉️ Statement](#6)
  7.  [🔍 Citation](#7)
  8.  [👏 Acknowledgements](#8)
 
 
-## 🍎 News: We have released the code!
+## 🍎 News: We have released the model!
 
 
 ## 💡 Abstract <a name="1"></a> 
@@ -160,7 +161,17 @@ To perform inference using the trained model, follow these steps:
    
 We have provided an additional `utils/get_ply_result.py` file to help to obtain visualization results.
 
+**Checkpoints**<a name="54"></a> 
 
+You can download the model's weights from [huggingface](https://huggingface.co/Weizm/3DAffordSplat). When using checkpoints, please modify the `config\train_config.yaml` file accordingly:
+```
+pretrain:
+  is_resume: True
+  ckpt_path: path/where/checkpoints/located
+finetune:
+  is_resume: True
+  ckpt_path: path/where/checkpoints/located
+```
 
 ## ✉️ Statement <a name="6"></a> 
 This project is for research purpose only, please contact us for the licence of commercial use. For any other questions please contact (weizm6@mail2.sysu.edu.cn, linjy279@mail2.sysu.edu.cn or liuy856@mail.sysu.edu.cn).
